@@ -1,0 +1,90 @@
+.dashboard-container {
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+/* 컨트롤 부분 (버튼, 검색창) */
+.controls {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px; /* 요소 사이의 간격 */
+  align-items: center;
+}
+
+.controls input {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.controls button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* 콘텐츠 영역 (표와 차트) */
+.content-area {
+  display: flex; /* 자식 요소들을 가로로 배치 */
+  gap: 20px;
+  flex-wrap: wrap; /* 화면이 좁아지면 아래로 줄바꿈 */
+}
+
+/* 표 컨테이너 */
+.table-container {
+  flex: 2; /* 차트보다 2배의 공간을 차지 */
+  min-width: 600px;
+}
+
+/* 차트 컨테이너 */
+.chart-container {
+  flex: 1; /* 표의 1배 공간을 차지 */
+  min-width: 300px;
+}
+
+/* 표 스타일 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+.pdf-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-left: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.pdf-button:hover {
+  background-color: #45a049;
+}
+
+/* 추가된 요약문 스타일 */
+.report-summary {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin: 20px 0;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.warning-text {
+  color: #d9534f;
+  font-weight: bold;
+  margin-top: 8px;
+}

@@ -1,0 +1,50 @@
+.nav-bar {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  bottom: 0; /* ← 회색 줄 근처로 수동 배치 */
+  transform: translateX(-50%);
+}
+
+.nav-bar-item {
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 파란색 바 */
+.nav-bar-item::before {
+  content: '';
+  width: 100px;
+  height: 6px;
+  background-color: #7a7d82;
+  border-radius: 2px;
+  transition: transform 0.2s ease;
+}
+
+/* hover 시 파란 바 확대 */
+.nav-bar-item:hover::before {
+  transform: scaleX(1.15);
+}
+
+/* 텍스트 */
+.nav-label {
+  position: absolute;
+  bottom: 110%;
+  font-size: 20px;
+  color: #7a7d82;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-bar-item:hover .nav-label {
+  opacity: 1;
+  transform: translateY(0);
+}

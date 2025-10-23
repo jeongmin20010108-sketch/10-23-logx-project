@@ -1,0 +1,122 @@
+.file-input {
+  display: none;
+}
+
+.upload-text {
+  margin-right: 8px;
+}
+
+.upload-icon {
+  color: blue;
+}
+
+.file-name {
+  margin-top: 8px;
+  color: gray;
+}
+
+.preview-box {
+  background-color: #f8f8f8;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
+.upload-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid black;
+  /*color: rgb(43, 43, 43);
+  cursor: pointer;*/
+}
+
+.upload-button:hover {
+  background-color: #d2d1d1;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+.file-name-display {
+  margin-top: 10px;
+  font-size: 16px;
+  color: blue;
+}
+.welcome-message {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  margin-right: 10px;
+}
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main-login-button {
+  background-color: #f9f9f9;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 16px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #f1f1f1;
+}
+
+.main-signup-button {
+  background-color: #f9f9f9;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 16px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.signup-but:hover {
+  background-color: #f1f1f1;
+}
+
+.loading-section {
+  width: 60%;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #4caf50;
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #333;
+}
