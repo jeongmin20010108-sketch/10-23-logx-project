@@ -5,6 +5,7 @@ from sklearn.feature_extraction.text import HashingVectorizer
 from sklearn.calibration import CalibratedClassifierCV
 from sklearn.decomposition import TruncatedSVD
 from sklearn.ensemble import IsolationForest
+from flask import Flask, request, jsonify
 
 # UTF-8 stdout
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
@@ -171,15 +172,39 @@ def analyze_single_file(filepath):
     return results
 
 # ===== 메인 실행 로직 =====
+app = Flask(__name__)
+
+# /analyze 라는 주소로 POST 요청이 오면 이 함수를 실행
+@app.route('/analyze', methods=['POST'])
+def handle_analysis():
+    # 웹 요청으로 업로드된 'log_file'이라는 이름의 파일을 가져옴
+    if 'log_file' not in request.files:
+        return jsonify({"error": "로그 파일이 없습니다. 'log_file' 키로 업로드해주세요."}), 400
+    
+    file = request.files['log_file']
+    
+    if file.filename == '':
+        return jsonify({"error": "파일이 선택되지 않았습니다."}), 400
+
+    try:
+        # Vultr 서버는 /tmp 폴더에 쓰기 권한이 있습니다.
+        temp_path = os.path.join("/tmp", file.filename)
+        file.save(temp_path)
+
+        # 기존 분석 함수 실행
+        analysis_results = analyze_single_file(temp_path)
+        
+        # 임시 파일 삭제
+        os.remove(temp_path)
+        
+        # 결과를 JSON 형태로 반환
+        return jsonify(analysis_results)
+
+    except Exception as e:
+        # 모델 파일이 없는 경우 등 모든 오류를 JSON으로 반환
+        return jsonify({"error": f"분석 중 오류 발생: {str(e)}"}), 500
+
+# ===== 메인 실행 로직 =====
 if __name__ == '__main__':
-    if len(sys.argv) < 2:
-        print("❌ 사용법: python asdfg.py <분석할_로그파일_경로>")
-        sys.exit(1)
-        
-    target_file = sys.argv[1]
-    if not os.path.exists(target_file):
-        print(f"❌ 파일을 찾을 수 없습니다: {target_file}")
-        sys.exit(1)
-        
-    analysis_results = analyze_single_file(target_file)
-    print(json.dumps(analysis_results, indent=2, ensure_ascii=False))
+    # Gunicorn이 이 파일을 실행할 때 사용됨 (로컬 테스트 시 python asdfg.py)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
