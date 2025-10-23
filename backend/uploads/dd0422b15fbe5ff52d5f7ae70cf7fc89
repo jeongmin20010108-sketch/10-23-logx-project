@@ -1,0 +1,222 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #fffff;
+  min-height: 100vh;
+}
+
+.signup-box {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-with-button {
+  display: flex;
+  gap: 10px;
+}
+
+.input-with-button input {
+  flex: 1;
+}
+
+.input-with-button button {
+  padding: 10px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-with-button button:hover {
+  background-color: #ccc;
+}
+
+.signup-button {
+  background-color: #007bff;
+  color: white;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.success {
+  color: green;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+
+-------------------------------------------------------------------------------------------
+import React, { useState } from "react"
+import { useNavigate } from "react-router-dom"
+import "./styles/SignupPage.css"
+
+function SignupPage() {
+  const [username, setUsername] = useState("")
+  const [password, setPassword] = useState("")
+  const [confirmPassword, setConfirmPassword] = useState("")
+  const [email, setEmail] = useState("")
+  const [phone, setPhone] = useState("")
+  const [usernameAvailable, setUsernameAvailable] = useState(null)
+  const [errorMessage, setErrorMessage] = useState("")
+  const navigate = useNavigate()
+
+  const handleCheckUsername = async () => {
+    if (!username) return
+
+    const response = await fetch(`http://localhost:8000/api/check-username?username=${username}`)
+    const data = await response.json()
+
+    if (data.exists) {
+      setUsernameAvailable(false)
+      setErrorMessage("이미 사용 중인 아이디입니다.")
+    } else {
+      setUsernameAvailable(true)
+      setErrorMessage("사용 가능한 아이디입니다.")
+    }
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+
+    if (!email.includes("@")) {
+      setErrorMessage("유효한 이메일 주소를 입력하세요.")
+      return
+    }
+
+    if (password !== confirmPassword) {
+      setErrorMessage("비밀번호가 일치하지 않습니다.")
+      return
+    }
+
+    const response = await fetch("http://localhost:8000/api/signup", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ username, password, email, phone }),
+    })
+
+    const data = await response.json()
+    if (response.ok) {
+      alert("회원가입 성공!")
+      navigate("/login")
+    } else {
+      setErrorMessage(`회원가입 실패: ${data.message}`)
+    }
+  }
+
+  return (
+    <div className="signup-container">
+      <div className="signup-box">
+        <h2>회원가입</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="input-group">
+            <label>아이디</label>
+            <div className="input-with-button">
+              <input
+                value={username}
+                onChange={(e) => {
+                  setUsername(e.target.value)
+                  setUsernameAvailable(null)
+                  setErrorMessage("")
+                }}
+                required
+              />
+              <button type="button" onClick={handleCheckUsername}>
+                중복 확인
+              </button>
+            </div>
+            {usernameAvailable === false && <p className="error">이미 사용 중입니다.</p>}
+            {usernameAvailable === true && <p className="success">사용 가능합니다.</p>}
+          </div>
+
+          <div className="input-group">
+            <label>비밀번호</label>
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+          </div>
+
+          <div className="input-group">
+            <label>비밀번호 확인</label>
+            <input
+              type="password"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              required
+            />
+          </div>
+
+          <div className="input-group">
+            <label>이메일</label>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
+
+          <div className="input-group">
+            <label>전화번호</label>
+            <input
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              required
+            />
+          </div>
+
+          {errorMessage && <p className="error">{errorMessage}</p>}
+
+          <button type="submit" className="signup-button">
+            회원가입
+          </button>
+        </form>
+      </div>
+    </div>
+  )
+}
+
+export default SignupPage

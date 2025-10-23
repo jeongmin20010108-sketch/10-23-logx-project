@@ -1,0 +1,10 @@
+{"timestamp":"2025-05-26T10:00:01Z","level":"INFO","service":"auth","message":"User login successful","userId":"user123","ip":"192.168.0.10"}
+{"timestamp":"2025-05-26T10:02:15Z","level":"WARN","service":"payment","message":"Payment delayed","orderId":"order456","amount":120.50}
+{"timestamp":"2025-05-26T10:05:30Z","level":"ERROR","service":"database","message":"Connection timeout","retryCount":3}
+{"timestamp":"2025-05-26T10:07:45Z","level":"INFO","service":"auth","message":"Password changed","userId":"user789"}
+{"timestamp":"2025-05-26T10:10:22Z","level":"DEBUG","service":"api","message":"Request received","endpoint":"/api/v1/products","responseTimeMs":150}
+{"timestamp":"2025-05-26T10:12:10Z","level":"INFO","service":"order","message":"Order placed","orderId":"order789","userId":"user456","total":45.99}
+{"timestamp":"2025-05-26T10:15:00Z","level":"ERROR","service":"payment","message":"Credit card declined","orderId":"order123","userId":"user123"}
+{"timestamp":"2025-05-26T10:17:30Z","level":"WARN","service":"api","message":"Deprecated API call","endpoint":"/api/v1/old-endpoint"}
+{"timestamp":"2025-05-26T10:20:05Z","level":"INFO","service":"notification","message":"Email sent","userId":"user456","email":"user456@example.com"}
+{"timestamp":"2025-05-26T10:22:40Z","level":"DEBUG","service":"cache","message":"Cache miss","key":"session_user123"}
