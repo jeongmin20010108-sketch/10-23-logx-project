@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Routes, Route, Link, useNavigate } from 'react-router-dom'
 import MainPage from './MainPage'
 import Result from './Result'
@@ -11,7 +11,7 @@ import './styles/Navbar.css'
 import LogDashboard from './LogDashboard'
 
 function NavBar({ isLoggedIn, username, setIsLoggedIn, setUsername }) {
-  const navigate = useNavigate()
+  
 
   return (
     <nav className="nav-bar">

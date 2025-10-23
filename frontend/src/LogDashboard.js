@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import LogChart from './chart'
 import html2canvas from 'html2canvas'
 import jsPDF from 'jspdf'
@@ -83,7 +83,7 @@ function LogDashboard() {
 
   let warningText = ''
   if (attack > 0) {
-    warningText = `⚠️ 보안 경고: ${attack}개의 악성 로그가 발견되었습니다. 즉시 시스템 점검 및 관리자 확인이 필요합니다.`
+    warningText = ` 보안 경고: ${attack}개의 악성 로그가 발견되었습니다. 즉시 시스템 점검 및 관리자 확인이 필요합니다.`
   }
 
   // --- PDF 다운로드 ---
