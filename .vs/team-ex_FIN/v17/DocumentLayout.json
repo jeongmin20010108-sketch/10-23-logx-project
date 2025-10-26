@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\team-ex_FIN\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\frontend\\src\\LoginPage.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\LoginPage.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\frontend\\src\\LogDashboard.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\LogDashboard.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\frontend\\src\\MainPage.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\MainPage.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\backend\\server.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\server.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
@@ -25,18 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\frontend\\src\\reportWebVitals.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\reportWebVitals.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\frontend\\src\\MainPage.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\MainPage.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\frontend\\src\\LoginPage.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\LoginPage.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\frontend\\src\\LogDashboard.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\LogDashboard.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\frontend\\src\\Log.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
@@ -126,11 +126,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "train.py",
               "DocumentMoniker": "C:\\team-ex_FIN\\backend\\AI\\AI\\train.py",
               "RelativeDocumentMoniker": "backend\\AI\\AI\\train.py",
@@ -139,21 +139,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMtSURBVDhPrZS9T1tnFMZ/1/cLGxy7BNuJIeCG2hIiSSWqRmmR8Fh16lhVVVTRIR34Ezo2kSqUqUJeKkHLEqlDWZAyUJZEoUNaoTatXEgsQykGFFyw8de997337RA5MeYqUx/pDOc55zx6znmlF/5PSCmVzjybzX4/NTV1U9f1TvoUKpWKrFard5aXl\u002B/u7e1Vu\u002BtaNzE9PU0ikeimX2J1dVUWi8UvVFWVKysr3xQKhXJn/YwgQKFQ6KZQVZVUKoWu64FsNhtNp9O3LMsKapo2u7Gxcdju8xVMJpPdFIry6jqGYeiTk5MDuq5/IqW0hBBfFwqFOkCgc6gNwzDORPuuqqqytLTE3Nycura2diEUCk2Yphlvz/o63Nzc7KbQNI10Os27N95n4vp7aAGFZv3Emp\u002Bf//tUX2fSxtjYWDdFzRL8lD9kv9qk2bTRA3AxrGoXh4b7A4FXi/oK\u002Bjm0\u002BpI8269xUKnz\u002BOk\u002BwrGJ9Rn6R\u002BNDI/F4vK/d53vDVCp1JioNwaONPfI7ZTzh4AmXaq2hNEQgGA6HQ\u002B1ZX0EA13VxUfjrucO9xwf8tl3m2qUoE6l\u002BzvfqCOEghCAWrV9d\u002Bu7mz17zjyee5w37rry1tQXAbkvnxycn7JZPEMLGdRyE4\u002BA6Np7r4CkKhvIcmuvQWh8n9uWsr8NMJkMmk6Ehezg4riGEg\u002BcINDwiQY1ISCca0nk7FeJasgpuE6x/wN75wNdhPp8HYGe3iWXZeEIw3K8xk20SVI\u002BR0gPpETWOGAwegGi8EHWPI691ODKYwAiAEA63sgbvXPiV8dgzrsQLXBnIM9RbRBH/gqiBWwc9eeQraNs2tm0z8obJ5YEgYVMlds5DkS54NggLPA9cQAZA6tBz1cUY/NZ35VKpBIAJfJ69TMWCRGQLWja4LVAioARBV8DMHGG\u002B\u002BSc9bz1dXFyc9RUcHR09lSuKgumVJLW6gtsC9xB6b4BUQD2/88P93a8ePLj3KJfLNc4ILiwsvPwIOvHZpx9uXzIHU9i/v3iAk1\u002BQfdelG5woP3x4u5jL5RrdM6\u002BFlPKc9Jy7srW9J2vrnrRK21LK\u002B1LKj2dmZlLtvv8AoKdgTW7XN1wAAAAASUVORK5CYII=",
               "WhenOpened": "2025-09-15T10:05:36.105Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "setupTests.js",
-              "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\setupTests.js",
-              "RelativeDocumentMoniker": "frontend\\src\\setupTests.js",
-              "ToolTip": "C:\\team-ex_FIN\\frontend\\src\\setupTests.js",
-              "RelativeToolTip": "frontend\\src\\setupTests.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-10-26T21:12:25.026Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -161,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "server.js",
               "DocumentMoniker": "C:\\team-ex_FIN\\backend\\server.js",
               "RelativeDocumentMoniker": "backend\\server.js",
@@ -174,33 +160,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "LogDashboard.js",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\LogDashboard.js",
               "RelativeDocumentMoniker": "frontend\\src\\LogDashboard.js",
               "ToolTip": "C:\\team-ex_FIN\\frontend\\src\\LogDashboard.js",
               "RelativeToolTip": "frontend\\src\\LogDashboard.js",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAAAIsAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIsAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-09-23T02:39:53.412Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "MainPage.js",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\MainPage.js",
               "RelativeDocumentMoniker": "frontend\\src\\MainPage.js",
               "ToolTip": "C:\\team-ex_FIN\\frontend\\src\\MainPage.js",
               "RelativeToolTip": "frontend\\src\\MainPage.js",
-              "ViewState": "AgIAAB4AAAAAAAAAAADwvzMAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-09-25T16:51:23.863Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Result.js",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\Result.js",
               "RelativeDocumentMoniker": "frontend\\src\\Result.js",
@@ -208,8 +194,7 @@
               "RelativeToolTip": "frontend\\src\\Result.js",
               "ViewState": "AgIAACEAAAAAAAAAAAAAAA4AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-09-23T02:39:22.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-23T02:39:22.877Z"
             },
             {
               "$type": "Document",
@@ -221,8 +206,32 @@
               "RelativeToolTip": "frontend\\src\\App.js",
               "ViewState": "AgIAAHUAAAAAAAAAAAAAAFUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-09-23T02:23:43.671Z",
+              "WhenOpened": "2025-09-23T02:23:43.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginPage.js",
+              "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\LoginPage.js",
+              "RelativeDocumentMoniker": "frontend\\src\\LoginPage.js",
+              "ToolTip": "C:\\team-ex_FIN\\frontend\\src\\LoginPage.js",
+              "RelativeToolTip": "frontend\\src\\LoginPage.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-09-23T06:13:41.442Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "setupTests.js",
+              "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\setupTests.js",
+              "RelativeDocumentMoniker": "frontend\\src\\setupTests.js",
+              "ToolTip": "C:\\team-ex_FIN\\frontend\\src\\setupTests.js",
+              "RelativeToolTip": "frontend\\src\\setupTests.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-26T21:12:25.026Z"
             },
             {
               "$type": "Document",
@@ -234,8 +243,7 @@
               "RelativeToolTip": "frontend\\src\\App.test.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-09-23T02:30:01.148Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-23T02:30:01.148Z"
             },
             {
               "$type": "Document",
@@ -247,8 +255,7 @@
               "RelativeToolTip": "frontend\\src\\chart.js",
               "ViewState": "AgIAADYAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-09-23T02:25:34.093Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-23T02:25:34.093Z"
             },
             {
               "$type": "Document",
@@ -260,8 +267,7 @@
               "RelativeToolTip": "frontend\\src\\index.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-09-23T06:24:32.067Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-23T06:24:32.067Z"
             },
             {
               "$type": "Document",
@@ -273,8 +279,7 @@
               "RelativeToolTip": "frontend\\src\\index.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-09-23T03:04:21.244Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-23T03:04:21.244Z"
             },
             {
               "$type": "Document",
@@ -286,25 +291,11 @@
               "RelativeToolTip": "frontend\\src\\Log.js",
               "ViewState": "AgIAAHsAAAAAAAAAAAAAAIsAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-09-23T03:04:18.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-23T03:04:18.91Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LoginPage.js",
-              "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\LoginPage.js",
-              "RelativeDocumentMoniker": "frontend\\src\\LoginPage.js",
-              "ToolTip": "C:\\team-ex_FIN\\frontend\\src\\LoginPage.js",
-              "RelativeToolTip": "frontend\\src\\LoginPage.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvw4AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-09-23T06:13:41.442Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "SignupPage.js",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\SignupPage.js",
               "RelativeDocumentMoniker": "frontend\\src\\SignupPage.js",
@@ -312,12 +303,11 @@
               "RelativeToolTip": "frontend\\src\\SignupPage.js",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAI0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-10-26T19:36:43.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T19:36:43.994Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "reportWebVitals.js",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\reportWebVitals.js",
               "RelativeDocumentMoniker": "frontend\\src\\reportWebVitals.js",
@@ -325,8 +315,7 @@
               "RelativeToolTip": "frontend\\src\\reportWebVitals.js",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-09-23T06:13:43.525Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-23T06:13:43.525Z"
             },
             {
               "$type": "Document",

@@ -1,4 +1,4 @@
-import React, { useState } => {
+import React, { useState } from 'react'
   const navigate = useNavigate()
   const [file, setFile] = useState(null)
   const [fileContent, setFileContent] = useState('')
