@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\netlify",
+    "\\netlify\\functions"
   ],
-  "SelectedNode": "\\frontend\\.gitignore",
+  "SelectedNode": "\\netlify\\functions\\es-proxy.js",
   "PreviewInSolutionExplorer": false
 }
