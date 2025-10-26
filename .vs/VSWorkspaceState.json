@@ -1,9 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\netlify",
-    "\\netlify\\functions"
+    ""
   ],
-  "SelectedNode": "\\netlify\\functions\\es-proxy.js",
+  "SelectedNode": "\\frontend",
   "PreviewInSolutionExplorer": false
 }
