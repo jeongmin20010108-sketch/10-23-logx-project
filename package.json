@@ -8,3 +8,6 @@
     "react-router-dom": "^7.6.0"
   }
 }
+"engines": {
+    "node": "22" 
+  }
