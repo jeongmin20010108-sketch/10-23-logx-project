@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\team-ex_FIN\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\frontend\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\netlify.toml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:netlify.toml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\package.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:package.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
@@ -11,16 +19,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:netlify\\functions\\package.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\frontend\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\netlify\\functions\\package-lock.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:netlify\\functions\\package-lock.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\netlify.toml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:netlify.toml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\netlify\\functions\\es-proxy.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
@@ -142,7 +142,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
@@ -163,32 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "package.json",
-              "DocumentMoniker": "C:\\team-ex_FIN\\package.json",
-              "RelativeDocumentMoniker": "package.json",
-              "ToolTip": "C:\\team-ex_FIN\\package.json",
-              "RelativeToolTip": "package.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-26T22:03:26.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "package-lock.json",
-              "DocumentMoniker": "C:\\team-ex_FIN\\netlify\\functions\\package-lock.json",
-              "RelativeDocumentMoniker": "netlify\\functions\\package-lock.json",
-              "ToolTip": "C:\\team-ex_FIN\\netlify\\functions\\package-lock.json",
-              "RelativeToolTip": "netlify\\functions\\package-lock.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-26T21:54:35.863Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "package.json",
               "DocumentMoniker": "C:\\team-ex_FIN\\netlify\\functions\\package.json",
               "RelativeDocumentMoniker": "netlify\\functions\\package.json",
@@ -224,15 +199,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "netlify.toml",
+              "DocumentMoniker": "C:\\team-ex_FIN\\netlify.toml",
+              "RelativeDocumentMoniker": "netlify.toml",
+              "ToolTip": "C:\\team-ex_FIN\\netlify.toml",
+              "RelativeToolTip": "netlify.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-26T19:27:06.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": ".gitignore",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\.gitignore",
               "RelativeDocumentMoniker": "frontend\\.gitignore",
               "ToolTip": "C:\\team-ex_FIN\\frontend\\.gitignore",
               "RelativeToolTip": "frontend\\.gitignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-10-23T00:46:18.146Z"
+              "WhenOpened": "2025-10-23T00:46:18.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\team-ex_FIN\\package.json",
+              "RelativeDocumentMoniker": "package.json",
+              "ToolTip": "C:\\team-ex_FIN\\package.json",
+              "RelativeToolTip": "package.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-26T22:03:26.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "package-lock.json",
+              "DocumentMoniker": "C:\\team-ex_FIN\\netlify\\functions\\package-lock.json",
+              "RelativeDocumentMoniker": "netlify\\functions\\package-lock.json",
+              "ToolTip": "C:\\team-ex_FIN\\netlify\\functions\\package-lock.json",
+              "RelativeToolTip": "netlify\\functions\\package-lock.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-26T21:54:35.863Z"
             },
             {
               "$type": "Document",
@@ -269,18 +282,6 @@
               "ViewState": "AgIAAHUAAAAAAAAAAAAAAFUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-09-23T02:23:43.671Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "netlify.toml",
-              "DocumentMoniker": "C:\\team-ex_FIN\\netlify.toml",
-              "RelativeDocumentMoniker": "netlify.toml",
-              "ToolTip": "C:\\team-ex_FIN\\netlify.toml",
-              "RelativeToolTip": "netlify.toml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-10-26T19:27:06.458Z"
             },
             {
               "$type": "Document",
