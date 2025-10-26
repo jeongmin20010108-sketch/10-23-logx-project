@@ -1,4 +1,10 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import './styles/MainPage.css'
+import './styles/Navbar.css'
+
+// [수정] 컴포넌트 함수로 전체 코드를 감쌉니다.
+function MainPage() {
   const navigate = useNavigate()
   const [file, setFile] = useState(null)
   const [fileContent, setFileContent] = useState('')
@@ -49,7 +55,7 @@ import React, { useState } from 'react'
     formData.append('logFile', file)
 
     try {
-        // [수정] localhost:8000 -> Vultr VPS 주소 (141.164.62.254:80)로 변경x
+        // Vultr VPS 주소 (141.164.62.254:80)로 변경
       const response = await fetch('http://141.164.62.254/upload-log', {
         method: 'POST',
         body: formData,
