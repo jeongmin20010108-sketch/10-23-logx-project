@@ -84,7 +84,7 @@ function AuthButtons({ isLoggedIn, username, setIsLoggedIn, setUsername }) {
 
   const handleLogout = async () => {
     try {
-      const res = await fetch('http://localhost:8000/api/logout', {
+      const res = await fetch('http://141.164.62.254/api/logout', {
         method: 'POST',
         credentials: 'include',
       })

@@ -9,18 +9,19 @@ const { spawn } = require('child_process');
 
 const app = express();
 // ✅ 80번 포트로 변경
-const PORT = 80; 
+const PORT = 80; 
 
 
 app.use(cors({
-  origin: "https://10-23-logx-project.netlify.app", 
+  origin: "https://10-23-logx-project.netlify.app", 
   credentials: true,
 }));
 app.use(express.json());
 
 
 const db = mysql.createConnection({
-  host: "141.164.62.254", // "localhost" 대신 서버 IP 입력
+  // [수정] 같은 VPS에서 실행되므로 localhost를 사용하는 것이 효율적
+  host: "localhost", 
   user: "root",
   password: "1234",
   database: "my_database",
@@ -36,12 +37,9 @@ db.connect((err) => {
 
 
 const esClient = new Client({
-  // "localhost" 대신 서버 IP 입력
-  node: "http://141.164.62.254:9201", 
-  auth: {
-    username: "elastic",
-    password: "647100",
-  },
+  
+  node: "http://141.164.62.254:9200", 
+  
   tls: {
     rejectUnauthorized: false,
   },
@@ -87,7 +85,6 @@ async function checkDocumentCount() {
 }
 
 
-
 // ✅ 사용자 인증 관련 API
 app.post("/api/login", (req, res) => { /* ... */ });
 app.get("/api/check-username", (req, res) => { /* ... */ });
@@ -118,9 +115,9 @@ app.post("/upload-log", upload.single("logFile"), async (req, res) => {
         console.log(`✅ 파일 저장 완료: ${logFilePath}`);
         console.log("▶ AI 분석을 시작합니다...");
         
-        
-        const venvPython = path.join(__dirname, '../venv/bin/python3'); 
-        const scriptPath = path.join(__dirname, 'AI/AI/asdfg.py');
+        
+        const venvPython = path.join(__dirname, '../venv/bin/python3'); 
+        const scriptPath = path.join(__dirname, 'AI/AI/asdfg.py');
 
         const pythonProcess = spawn(venvPython, [scriptPath, logFilePath]);
         let analysisResult = '';

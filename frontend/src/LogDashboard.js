@@ -20,13 +20,17 @@ function LogDashboard() {
   useEffect(() => {
     const fetchInitialData = async () => {
       try {
+        // [수정된 부분]
+        // Netlify Functions (Proxy)를 사용하기 위해 localhost:8000 주소를 상대 경로로 변경
+        // 이 요청은 netlify.toml의 redirects 규칙에 따라 Functions로 라우팅됩니다.
         const [allLogsResponse, vulnerabilitiesResponse] = await Promise.all([
-          fetch('http://localhost:8000/api/logs'),
-          fetch('http://localhost:8000/api/logs/vulnerabilities'),
+          fetch('/api/logs'),
+          fetch('/api/logs/vulnerabilities'),
         ])
 
         if (!allLogsResponse.ok || !vulnerabilitiesResponse.ok) {
-          throw new Error('데이터를 불러오는 중 문제가 발생했습니다.')
+          // 응답 상태 코드가 200 범위가 아니면 오류 발생
+          throw new Error('데이터를 불러오는 중 문제가 발생했습니다. (서버 상태 확인 필요)')
         }
 
         const allLogsJson = await allLogsResponse.json()
@@ -54,7 +58,7 @@ function LogDashboard() {
     log._source.original_log.toLowerCase().includes(searchTerm.toLowerCase())
   )
 
-  //  로그 통계 및 요약 텍스트 생성
+  //  로그 통계 및 요약 텍스트 생성
   const total = filteredData.length
   const normal = filteredData.filter(
     (log) => log._source.prediction.toLowerCase() === 'normal'

@@ -6,9 +6,8 @@
     "\\backend\\AI\\AI",
     "\\frontend",
     "\\frontend\\public",
-    "\\frontend\\src",
-    "\\uploads"
+    "\\frontend\\src"
   ],
-  "SelectedNode": "\\backend\\AI\\AI",
+  "SelectedNode": "\\backend\\server.js",
   "PreviewInSolutionExplorer": false
 }

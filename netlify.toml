@@ -1,0 +1,15 @@
+[build]
+  # 빌드 결과물이 위치하는 폴더를 지정합니다. 
+  # (예: React 앱의 경우 'build', Vue/Vite 앱의 경우 'dist')
+  # 이 경로는 프로젝트 설정을 확인하여 정확하게 입력해야 합니다.
+  publish = "build" 
+  
+  # Netlify Functions 코드가 있는 폴더를 지정합니다.
+  functions = "netlify/functions"
+
+# API 요청을 Netlify Functions로 라우팅하는 Redirects 규칙
+# 프론트엔드의 '/api/*' 요청을 Functions 폴더로 전달합니다.
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
