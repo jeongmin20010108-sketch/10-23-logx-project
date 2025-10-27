@@ -1,16 +1,9 @@
 [build]
-  # npm run build --prefix frontend 명령을 실행하면 Netlify가 npm install을 시도합니다.
-  command = "npm run build --prefix frontend" 
-  
-  # Publish directory는 React Build 결과물 위치입니다.
+  command = "npm run build --prefix frontend"
   publish = "frontend/build"
-
-  # Functions 경로는 이대로 남겨둡니다.
   functions = "netlify/functions"
 
-# API Redirects (ELK Proxy)
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
-```
