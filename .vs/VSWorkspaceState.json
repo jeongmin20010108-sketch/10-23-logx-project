@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
+    "\\frontend",
     "\\frontend\\src"
   ],
-  "SelectedNode": "\\node.nvmrc",
+  "SelectedNode": "\\frontend\\.gitignore",
   "PreviewInSolutionExplorer": false
 }

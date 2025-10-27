@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\team-ex_FIN\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\frontend\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\node.nvmrc||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:node.nvmrc||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\frontend\\src\\App.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\src\\App.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\frontend\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\netlify\\functions\\es-proxy.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
@@ -146,7 +146,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
@@ -162,8 +162,12 @@
               "IsPinned": true
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "node.nvmrc",
               "DocumentMoniker": "C:\\team-ex_FIN\\node.nvmrc",
               "RelativeDocumentMoniker": "node.nvmrc",
@@ -173,10 +177,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-10-27T08:45:50.716Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -192,15 +192,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": ".gitignore",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\.gitignore",
               "RelativeDocumentMoniker": "frontend\\.gitignore",
               "ToolTip": "C:\\team-ex_FIN\\frontend\\.gitignore",
               "RelativeToolTip": "frontend\\.gitignore",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAACwAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-10-23T00:46:18.146Z"
+              "WhenOpened": "2025-10-23T00:46:18.146Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -216,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "App.js",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\App.js",
               "RelativeDocumentMoniker": "frontend\\src\\App.js",
@@ -228,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LogDashboard.css",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\styles\\LogDashboard.css",
               "RelativeDocumentMoniker": "frontend\\src\\styles\\LogDashboard.css",
@@ -236,12 +237,11 @@
               "RelativeToolTip": "frontend\\src\\styles\\LogDashboard.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-09-23T02:45:10.905Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-23T02:45:10.905Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "package.json",
               "DocumentMoniker": "C:\\team-ex_FIN\\package.json",
               "RelativeDocumentMoniker": "package.json",
@@ -249,8 +249,7 @@
               "RelativeToolTip": "package.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-26T22:03:26.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T22:03:26.994Z"
             },
             {
               "$type": "Document",
