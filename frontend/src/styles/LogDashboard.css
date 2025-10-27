@@ -1,6 +1,7 @@
 .dashboard-container {
   padding: 20px;
   font-family: sans-serif;
+  background-color: #f7f9fb;
 }
 
 /* 컨트롤 부분 (버튼, 검색창) */
@@ -23,33 +24,50 @@
 
 /* 콘텐츠 영역 (표와 차트) */
 .content-area {
-  display: flex; /* 자식 요소들을 가로로 배치 */
-  gap: 20px;
-  flex-wrap: wrap; /* 화면이 좁아지면 아래로 줄바꿈 */
+  display: flex;
+  justify-content: space-between; /* 양쪽 끝 정렬 */
+  align-items: flex-start;
+  gap: 50px; /* 표와 차트 사이 여백 (기존보다 넓게) */
+  flex-wrap: wrap; /* 화면 작아질 때 줄바꿈 */
+  margin-top: 20px;
 }
 
 /* 표 컨테이너 */
 .table-container {
-  flex: 2; /* 차트보다 2배의 공간을 차지 */
-  min-width: 600px;
+  flex: 2;
+  min-width: 650px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  overflow-x: auto;
 }
 
 /* 차트 컨테이너 */
 .chart-container {
-  flex: 1; /* 표의 1배 공간을 차지 */
-  min-width: 300px;
+  flex: 1;
+  min-width: 380px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  height: 500px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 /* 표 스타일 */
 table {
   width: 100%;
   border-collapse: collapse;
+  font-size: 15px;
 }
 
 th, td {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 10px 12px;
   text-align: left;
+  vertical-align: middle;
 }
 
 thead {

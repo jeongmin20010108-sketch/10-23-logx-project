@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\backend",
-    "\\frontend"
+    "\\frontend\\src"
   ],
-  "SelectedNode": "\\backend\\AI",
+  "SelectedNode": "\\node.nvmrc",
   "PreviewInSolutionExplorer": false
 }

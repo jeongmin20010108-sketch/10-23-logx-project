@@ -21,7 +21,7 @@ function NavBar({ isLoggedIn, username, setIsLoggedIn, setUsername }) {
       <Link to="/log" className="nav-bar-item">
         <span className="nav-label">로그 안내</span>
       </Link>
-      <Link to="/result" className="nav-bar-item">
+      <Link to="/LogDashboard" className="nav-bar-item">
         <span className="nav-label">분석결과</span>
       </Link>
     </nav>
