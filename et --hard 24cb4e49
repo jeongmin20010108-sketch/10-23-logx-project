@@ -1,0 +1,38 @@
+[33md72c1d76[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Test: Simplify redirects and match function filenames
+[33m870b206c[m last test2
+[33ma43fcebc[m last test1
+[33m40667d47[m last2
+[33m24cb4e49[m test7
+[33m84857b03[m last6
+[33m600f27ca[m last5
+[33mf5e883a4[m last4
+[33m085618bd[m last3
+[33maa86fb89[m Final cleanup: Ensure TOML syntax is valid and minimal
+[33m778832a3[m last1
+[33mca39090b[m last please
+[33md2af5fff[m please
+[33m6ed3f0eb[m lastlastlast project
+[33m9215e664[m lastlast project
+[33m7f32f301[m test3
+[33m4cc4881e[m last project1
+[33m8d979bd0[m test
+[33mebb9bfe1[m Final cleanup: Remove node_modules from git, relying on Netlify auto-install
+[33m04f320c1[m last last project
+[33mc285a0cc[m last project
+[33mf65b3b08[m last change package last
+[33m5506beef[m last change package
+[33m3bc3b13d[m 1027 0650 funticon package.json add
+[33maaf6325a[m 1027 toml pile change
+[33m30c6dcd3[m 1027 last change git
+[33me45131f5[m 1027 0630 change
+[33mba5da705[m last change
+[33m93cc6018[m api change
+[33m4edd05c4[m Final Netlify Functions setup (Clean Push)
+[33m3b8e8ecb[m 수정본
+[33mfe441543[m Vultr 배포를 위해 서버 주소 수정
+[33m8e3de2af[m Flask 서버 코드 추가
+[33m4e11dd65[m Convert frontend from submodule to regular directory
+[33mee9fa122[m FINAL v3: 거대 로그 파일 제거
+[33m12b4ec79[m first commit
+[33m249edb48[m Add frontend folder
+[33ma63682d2[m first commit

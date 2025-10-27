@@ -1,8 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\backend",
+    "\\backend\\AI",
+    "\\backend\\AI\\AI",
+    "\\frontend\\src",
     "\\netlify",
     "\\netlify\\functions"
   ],
+  "SelectedNode": "\\backend\\AI\\AI\\train.py",
   "PreviewInSolutionExplorer": false
 }
