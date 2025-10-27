@@ -45,6 +45,6 @@ yarn-error.log*
 backend/AI/AI/logs/
 
 # Webpack / Build Caches
-frontend/node_modules/.cache/
-frontend/build/static/css/*.map
-frontend/build/static/js/*.map
+#frontend/node_modules/.cache/
+#frontend/build/static/css/*.map
+#frontend/build/static/js/*.map
