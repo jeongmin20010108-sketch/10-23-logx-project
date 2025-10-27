@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\backend",
+    "\\frontend"
   ],
+  "SelectedNode": "\\backend\\AI",
   "PreviewInSolutionExplorer": false
 }
