@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\frontend\\src",
     "\\netlify",
     "\\netlify\\functions"
   ],
-  "SelectedNode": "\\netlify.toml",
   "PreviewInSolutionExplorer": false
 }

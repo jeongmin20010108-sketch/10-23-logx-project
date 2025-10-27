@@ -166,6 +166,10 @@
               "IsPinned": true
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "package-lock.json",
@@ -175,12 +179,7 @@
               "RelativeToolTip": "package-lock.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-27T09:16:07.466Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "WhenOpened": "2025-10-27T09:16:07.466Z"
             },
             {
               "$type": "Document",
@@ -190,7 +189,7 @@
               "RelativeDocumentMoniker": "netlify.toml",
               "ToolTip": "C:\\team-ex_FIN\\netlify.toml",
               "RelativeToolTip": "netlify.toml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-10-26T19:27:06.458Z",
               "EditorCaption": ""
@@ -205,8 +204,7 @@
               "RelativeToolTip": "frontend\\.gitignore",
               "ViewState": "AgIAABsAAAAAAAAAAAAAACsAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-10-23T00:46:18.146Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-23T00:46:18.146Z"
             },
             {
               "$type": "Document",
@@ -230,8 +228,7 @@
               "RelativeToolTip": "netlify\\functions\\package.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-26T21:49:23.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T21:49:23.663Z"
             },
             {
               "$type": "Document",
@@ -255,8 +252,7 @@
               "RelativeToolTip": "package.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-26T22:03:26.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T22:03:26.994Z"
             },
             {
               "$type": "Document",
@@ -280,8 +276,7 @@
               "RelativeToolTip": "frontend\\src\\MainPage.js",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-09-25T16:51:23.863Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T16:51:23.863Z"
             },
             {
               "$type": "Document",
@@ -305,8 +300,7 @@
               "RelativeToolTip": "netlify\\functions\\package-lock.json",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-26T21:54:35.863Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T21:54:35.863Z"
             },
             {
               "$type": "Document",
