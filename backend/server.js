@@ -102,18 +102,40 @@ const upload = multer({ storage: storage });
 
 // 로그 파일 업로드, 삭제, AI 분석 실행 라우터
 app.post("/upload-log", upload.single("logFile"), async (req, res) => {
-    if (!req.file) {
-        console.log("⚠️ /upload-log: 파일이 업로드되지 않음");
-        return res.status(400).send("파일이 업로드되지 않았습니다.");
-    }
+    if (!req.file) { /* ... */ }
     try {
-        console.log("🔄 /upload-log: 기존 분석 데이터 삭제 시작...");
-        await esClient.deleteByQuery({
-            index: 'analyzed-logs',
-            body: { query: { match_all: {} } },
-            refresh: true
-        });
-        console.log("✅ /upload-log: 기존 데이터 삭제 완료.");
+        console.log("🔄 /upload-log: 요청 수신됨."); // 요청 수신 로그 추가
+
+        
+        const indexName = 'analyzed-logs';
+        // indices.exists() 반환 값은 boolean이 아닐 수 있으므로 body 확인
+        const existsResponse = await esClient.indices.exists({ index: indexName });
+        const exists = existsResponse.body; // Elasticsearch 8.x 이상
+
+        if (exists) {
+            console.log(`🔄 /upload-log: '${indexName}' 인덱스 존재 확인. 기존 데이터 삭제 시작...`);
+            await esClient.deleteByQuery({
+                index: indexName,
+                body: { query: { match_all: {} } },
+                refresh: true
+            });
+            console.log("✅ /upload-log: 기존 데이터 삭제 완료.");
+        } else {
+            console.log(`ℹ️ /upload-log: '${indexName}' 인덱스가 없어 새로 생성합니다.`);
+             await esClient.indices.create({ 
+                index: indexName,
+                mappings: {
+                 properties: {
+                    "anomaly_score": { "type": "float" },
+                    "prediction": { "type": "keyword" },
+                    "original_log": { "type": "text" },
+                    "url": { "type": "keyword" },
+                    "status": { "type": "keyword" }
+                 }
+                }
+             });
+             console.log(`✅ /upload-log: '${indexName}' 인덱스 생성 완료.`);
+        }
 
         const logFilePath = req.file.path;
         console.log(`✅ /upload-log: 파일 저장 완료: ${logFilePath}`);
