@@ -142,19 +142,13 @@ app.post("/upload-log", upload.single("logFile"), async (req, res) => {
         // [확인 완료] Python 가상 환경 경로 및 스크립트 경로 정의
         const scriptPath = path.join(__dirname, 'AI/AI/asdfg.py'); // server.js 위치 기준
 
-        // 🚨 [수정 완료] Shell 명령어로 가상 환경 활성화 및 스크립트 실행을 강제합니다.
-        const pythonExecutable = '/bin/bash'; // 쉘 실행 파일
-        const pythonArgs = [
-            '-c',
-            // 쉘에서 'source venv/bin/activate'로 가상 환경 활성화 후, Python 실행 파일과 스크립트를 실행
-            `source /root/10-23-logx-project/venv/bin/activate && /usr/bin/python3 ${scriptPath} ${logFilePath}`
-        ];
+        const pythonExecutable = '/root/10-23-logx-project/venv/bin/python3'; // 쉘 실행 파일
+        const pythonArgs = [scriptPath, logFilePath];
 
         console.log(`📜 /upload-log: 스크립트 경로: ${scriptPath}`);
         console.log(`🐍 /upload-log: 실행될 Shell 명령: ${pythonArgs[1]}`); // 실행될 최종 명령 로그
 
-        // ⚠️ [수정 완료] spawn 호출: Shell 실행 파일과 인자 배열을 사용하고, { shell: true } 옵션을 추가
-        const pythonProcess = spawn(pythonExecutable, pythonArgs, { shell: true }); // <--- { shell: true } 추가!
+        const pythonProcess = spawn(pythonExecutable, pythonArgs); 
 
         let analysisResult = '';
         let errorOutput = '';
