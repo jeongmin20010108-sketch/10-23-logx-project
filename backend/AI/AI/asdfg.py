@@ -5,7 +5,11 @@ from sklearn.feature_extraction.text import HashingVectorizer
 from sklearn.calibration import CalibratedClassifierCV
 from sklearn.decomposition import TruncatedSVD
 from sklearn.ensemble import IsolationForest
-from flask import Flask, request, jsonify
+import sys
+import os
+
+print(f"--- Python Executable: {sys.executable}", file=sys.stderr) # 실행 파일 경로 출력
+print(f"--- sys.path: {sys.path}", file=sys.stderr) # 라이브러리 검색 경로 출력
 
 # UTF-8 stdout
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
