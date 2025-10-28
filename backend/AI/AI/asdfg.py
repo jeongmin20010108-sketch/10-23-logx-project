@@ -109,12 +109,20 @@ def parse_jsonl_line(line: str):
         return "", ""
 
 def iter_lines_mmap(filepath):
-    with open(filepath,'rb') as f:
-        mm = mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ)
-        for raw in iter(mm.readline, b""):
-            if not raw: break
-            yield raw.decode('utf-8', errors='ignore').strip()
-        mm.close()
+    try:
+        with open(filepath,'rb') as f:
+            # 파일 크기가 0이면 빈 리스트 반환
+            if os.fstat(f.fileno()).st_size == 0:
+                return
+            mm = mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ)
+            for raw in iter(mm.readline, b""):
+                if not raw: break
+                yield raw.decode('utf-8', errors='ignore').strip()
+            mm.close()
+    except FileNotFoundError:
+        print(f"Error: Log file not found at {filepath}", file=sys.stderr)
+        # 빈 제너레이터 반환 대신 오류 처리를 명확히 하거나 None 반환 고려
+        return # 빈 제너레이터 반환
 
 def rule_based_label(path, query):
     full = canonicalize((path or "") + (("?" + query) if query else ""))
@@ -145,70 +153,70 @@ def analyze_single_file(filepath):
    
     is_jsonl = filepath.endswith('.jsonl')
 
-    for line in iter_lines_mmap(filepath):
-        if is_jsonl:
-            path, query = parse_jsonl_line(line)
-        else:
-            path, query = parse_line(line)
+    line_iterator = iter_lines_mmap(filepath)
+    if line_iterator is None: # 파일 못 찾은 경우
+         return [] # 빈 결과 반환
 
-        if not path and not query: continue
-        
-        rec = (path or "") + (('?' + query) if query else '')
-        
-        rule_prediction = rule_based_label(path, query)
+    for line_num, line in enumerate(line_iterator):
+        try: # 각 라인 처리 중 오류 발생 가능성 대비
+            if is_jsonl:
+                path, query = parse_jsonl_line(line)
+            else:
+                path, query = parse_line(line)
 
-        if rule_prediction != "normal":
-            prediction = rule_prediction
-        else:
-            prediction = cal_clf.predict(vec.transform([rec]))[0]
+            if not path and not query: continue
 
-        vectorized_rec = vec.transform([rec])
-        reduced_rec = svd.transform(vectorized_rec)
-        anomaly_score = iforest.decision_function(reduced_rec)[0]
-        
-        results.append({
-            "original_log": line.strip(),
-            "url": rec,
-            "prediction": prediction,
-            "anomaly_score": float(anomaly_score),
-            "status": "analyzed"
-        })
+            rec = (path or "") + (('?' + query) if query else '')
+            rule_prediction = rule_based_label(path, query)
+
+            if rule_prediction != "normal":
+                prediction = rule_prediction
+            else:
+                # 벡터화 및 예측
+                vectorized_rec = vec.transform([rec])
+                prediction = cal_clf.predict(vectorized_rec)[0]
+
+
+            # 이상치 점수 계산 (벡터화 결과 재사용)
+            reduced_rec = svd.transform(vectorized_rec)
+            anomaly_score = iforest.decision_function(reduced_rec)[0]
+
+            results.append({
+                "original_log": line.strip(),
+                "url": rec,
+                "prediction": prediction,
+                "anomaly_score": float(anomaly_score), # NumPy float를 표준 float로 변환
+                "status": "analyzed"
+            })
+        except Exception as line_error:
+             print(f"Error processing line {line_num + 1}: {line_error}\nLine content: {line[:200]}...", file=sys.stderr)
+             # 오류 발생 라인은 건너뛰고 계속 진행할 수 있음
+             continue
+
+    
     return results
 
-# ===== 메인 실행 로직 =====
-app = Flask(__name__)
+if __name__ == '__main__':
+    # 명령줄 인자로 로그 파일 경로를 받음
+    if len(sys.argv) < 2:
+        print("Usage: python asdfg.py <log_file_path>", file=sys.stderr)
+        sys.exit(1)
 
-# /analyze 라는 주소로 POST 요청이 오면 이 함수를 실행
-@app.route('/analyze', methods=['POST'])
-def handle_analysis():
-    # 웹 요청으로 업로드된 'log_file'이라는 이름의 파일을 가져옴
-    if 'log_file' not in request.files:
-        return jsonify({"error": "로그 파일이 없습니다. 'log_file' 키로 업로드해주세요."}), 400
-    
-    file = request.files['log_file']
-    
-    if file.filename == '':
-        return jsonify({"error": "파일이 선택되지 않았습니다."}), 400
+    log_file_path = sys.argv[1]
+
+    # 파일 존재 여부 확인
+    if not os.path.exists(log_file_path):
+        print(f"Error: Input log file not found at {log_file_path}", file=sys.stderr)
+        sys.exit(1)
 
     try:
-        # Vultr 서버는 /tmp 폴더에 쓰기 권한이 있습니다.
-        temp_path = os.path.join("/tmp", file.filename)
-        file.save(temp_path)
+        # 로그 파일 분석 실행
+        analysis_results = analyze_single_file(log_file_path)
 
-        # 기존 분석 함수 실행
-        analysis_results = analyze_single_file(temp_path)
-        
-        # 임시 파일 삭제
-        os.remove(temp_path)
-        
-        # 결과를 JSON 형태로 반환
-        return jsonify(analysis_results)
+        # 결과를 JSON 배열 형식으로 표준 출력(stdout)
+        print(json.dumps(analysis_results, ensure_ascii=False, indent=2)) # indent 추가 (가독성)
 
-    except Exception as e:
-        # 모델 파일이 없는 경우 등 모든 오류를 JSON으로 반환
-        return jsonify({"error": f"분석 중 오류 발생: {str(e)}"}), 500
-
-# ===== 메인 실행 로직 =====
-if __name__ == '__main__':
-    # Gunicorn이 이 파일을 실행할 때 사용됨 (로컬 테스트 시 python asdfg.py)
-    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
+    except Exception as main_error:
+        # 분석 중 예상치 못한 오류 발생 시 stderr로 오류 메시지 출력
+        print(f"An unexpected error occurred during analysis: {main_error}", file=sys.stderr)
+        sys.exit(1) # 오류 코드(1)로 종료
