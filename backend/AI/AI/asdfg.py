@@ -212,11 +212,15 @@ if __name__ == '__main__':
     try:
         # 로그 파일 분석 실행
         analysis_results = analyze_single_file(log_file_path)
-
-        # 결과를 JSON 배열 형식으로 표준 출력(stdout)
-        print(json.dumps(analysis_results, ensure_ascii=False, indent=2)) # indent 추가 (가독성)
+        print(json.dumps(analysis_results, ensure_ascii=False, indent=2)) 
 
     except Exception as main_error:
-        # 분석 중 예상치 못한 오류 발생 시 stderr로 오류 메시지 출력
-        print(f"An unexpected error occurred during analysis: {main_error}", file=sys.stderr)
-        sys.exit(1) # 오류 코드(1)로 종료
+        # 🚨 [수정] 오류 발생 시 Traceback 전체를 stderr로 출력
+        import traceback
+        print(f"--- Python Executable: {sys.executable}", file=sys.stderr) # 환경 정보 다시 출력
+        print(f"--- sys.path: {sys.path}", file=sys.stderr)
+        print(f"❌ An unexpected error occurred during analysis: {main_error}", file=sys.stderr)
+        print("--- Full Traceback ---", file=sys.stderr)
+        traceback.print_exc(file=sys.stderr) # 👈 오류 상세 내용 출력
+        print("--- End Traceback ---", file=sys.stderr)
+        sys.exit(1)
