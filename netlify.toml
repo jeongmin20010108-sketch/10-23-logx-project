@@ -4,6 +4,11 @@
   functions = "netlify/functions"
 
 [[redirects]]
+  from = "/api/upload-log"
+  to = "/.netlify/functions/upload-log-background" 
+  status = 202 
+
+[[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
