@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\backend\\AI\\AI",
-    "\\netlify",
-    "\\netlify\\functions"
+    "\\backend"
   ],
-  "SelectedNode": "\\netlify\\functions\\package-lock.json",
+  "SelectedNode": "\\backend\\server.js",
   "PreviewInSolutionExplorer": false
 }

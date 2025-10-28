@@ -105,8 +105,6 @@ app.post("/upload-log", upload.single("logFile"), async (req, res) => {
     if (!req.file) { /* ... */ }
     try {
         console.log("🔄 /upload-log: 요청 수신됨."); // 요청 수신 로그 추가
-
-        
         const indexName = 'analyzed-logs';
         // indices.exists() 반환 값은 boolean이 아닐 수 있으므로 body 확인
         const existsResponse = await esClient.indices.exists({ index: indexName });

@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\team-ex_FIN\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\backend\\server.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\server.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\netlify\\functions\\upload-log.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:netlify\\functions\\upload-log.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\netlify.toml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:netlify.toml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\netlify\\functions\\package-lock.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:netlify\\functions\\package-lock.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
@@ -15,16 +27,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\package.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\backend\\server.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\server.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\backend\\AI\\AI\\train.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\AI\\AI\\train.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\netlify.toml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:netlify.toml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\team-ex_FIN\\frontend\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
@@ -154,11 +158,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "train.py",
               "DocumentMoniker": "C:\\team-ex_FIN\\backend\\AI\\AI\\train.py",
               "RelativeDocumentMoniker": "backend\\AI\\AI\\train.py",
@@ -170,8 +174,25 @@
               "IsPinned": true
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "upload-log.js",
+              "DocumentMoniker": "C:\\team-ex_FIN\\netlify\\functions\\upload-log.js",
+              "RelativeDocumentMoniker": "netlify\\functions\\upload-log.js",
+              "ToolTip": "C:\\team-ex_FIN\\netlify\\functions\\upload-log.js",
+              "RelativeToolTip": "netlify\\functions\\upload-log.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-27T21:39:52.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "package-lock.json",
               "DocumentMoniker": "C:\\team-ex_FIN\\netlify\\functions\\package-lock.json",
               "RelativeDocumentMoniker": "netlify\\functions\\package-lock.json",
@@ -179,29 +200,11 @@
               "RelativeToolTip": "netlify\\functions\\package-lock.json",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvw0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-27T20:58:47.491Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T20:58:47.491Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "package.json",
-              "DocumentMoniker": "C:\\team-ex_FIN\\backend\\package.json",
-              "RelativeDocumentMoniker": "backend\\package.json",
-              "ToolTip": "C:\\team-ex_FIN\\backend\\package.json",
-              "RelativeToolTip": "backend\\package.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-27T20:54:02.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "LogDashboard.css",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\styles\\LogDashboard.css",
               "RelativeDocumentMoniker": "frontend\\src\\styles\\LogDashboard.css",
@@ -213,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "package.json",
               "DocumentMoniker": "C:\\team-ex_FIN\\netlify\\functions\\package.json",
               "RelativeDocumentMoniker": "netlify\\functions\\package.json",
@@ -221,25 +224,48 @@
               "RelativeToolTip": "netlify\\functions\\package.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-26T21:49:23.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T21:49:23.663Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "server.js",
               "DocumentMoniker": "C:\\team-ex_FIN\\backend\\server.js",
               "RelativeDocumentMoniker": "backend\\server.js",
               "ToolTip": "C:\\team-ex_FIN\\backend\\server.js",
               "RelativeToolTip": "backend\\server.js",
-              "ViewState": "AgIAAOEAAAAAAAAAAAAgwOsAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAcwI0AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-09-13T10:31:13.148Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
+              "Title": "netlify.toml",
+              "DocumentMoniker": "C:\\team-ex_FIN\\netlify.toml",
+              "RelativeDocumentMoniker": "netlify.toml",
+              "ToolTip": "C:\\team-ex_FIN\\netlify.toml",
+              "RelativeToolTip": "netlify.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-26T19:27:06.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\team-ex_FIN\\backend\\package.json",
+              "RelativeDocumentMoniker": "backend\\package.json",
+              "ToolTip": "C:\\team-ex_FIN\\backend\\package.json",
+              "RelativeToolTip": "backend\\package.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-27T20:54:02.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": ".gitignore",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\.gitignore",
               "RelativeDocumentMoniker": "frontend\\.gitignore",
@@ -251,19 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "netlify.toml",
-              "DocumentMoniker": "C:\\team-ex_FIN\\netlify.toml",
-              "RelativeDocumentMoniker": "netlify.toml",
-              "ToolTip": "C:\\team-ex_FIN\\netlify.toml",
-              "RelativeToolTip": "netlify.toml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-10-26T19:27:06.458Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "MainPage.js",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\MainPage.js",
               "RelativeDocumentMoniker": "frontend\\src\\MainPage.js",
@@ -275,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "package-lock.json",
               "DocumentMoniker": "C:\\team-ex_FIN\\package-lock.json",
               "RelativeDocumentMoniker": "package-lock.json",
@@ -287,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "App.js",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\App.js",
               "RelativeDocumentMoniker": "frontend\\src\\App.js",
@@ -299,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "package.json",
               "DocumentMoniker": "C:\\team-ex_FIN\\package.json",
               "RelativeDocumentMoniker": "package.json",
@@ -311,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "node.nvmrc",
               "DocumentMoniker": "C:\\team-ex_FIN\\node.nvmrc",
               "RelativeDocumentMoniker": "node.nvmrc",
@@ -323,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "LogDashboard.js",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\LogDashboard.js",
               "RelativeDocumentMoniker": "frontend\\src\\LogDashboard.js",
@@ -335,7 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "logs.js",
               "DocumentMoniker": "C:\\team-ex_FIN\\netlify\\functions\\logs.js",
               "RelativeDocumentMoniker": "netlify\\functions\\logs.js",
@@ -347,7 +361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Result.js",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\Result.js",
               "RelativeDocumentMoniker": "frontend\\src\\Result.js",
@@ -359,7 +373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "LoginPage.js",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\LoginPage.js",
               "RelativeDocumentMoniker": "frontend\\src\\LoginPage.js",
@@ -371,7 +385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "setupTests.js",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\setupTests.js",
               "RelativeDocumentMoniker": "frontend\\src\\setupTests.js",
@@ -383,7 +397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "App.test.js",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\App.test.js",
               "RelativeDocumentMoniker": "frontend\\src\\App.test.js",
@@ -395,7 +409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "chart.js",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\chart.js",
               "RelativeDocumentMoniker": "frontend\\src\\chart.js",
@@ -407,7 +421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "index.css",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\index.css",
               "RelativeDocumentMoniker": "frontend\\src\\index.css",
@@ -419,7 +433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "index.js",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\index.js",
               "RelativeDocumentMoniker": "frontend\\src\\index.js",
@@ -431,7 +445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Log.js",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\Log.js",
               "RelativeDocumentMoniker": "frontend\\src\\Log.js",
@@ -443,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "SignupPage.js",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\SignupPage.js",
               "RelativeDocumentMoniker": "frontend\\src\\SignupPage.js",
@@ -455,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "reportWebVitals.js",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\reportWebVitals.js",
               "RelativeDocumentMoniker": "frontend\\src\\reportWebVitals.js",
@@ -467,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "MainPage.css",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\styles\\MainPage.css",
               "RelativeDocumentMoniker": "frontend\\src\\styles\\MainPage.css",
@@ -479,7 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "LoginPage.css",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\styles\\LoginPage.css",
               "RelativeDocumentMoniker": "frontend\\src\\styles\\LoginPage.css",
@@ -491,7 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "asdfg.py",
               "DocumentMoniker": "C:\\team-ex_FIN\\backend\\AI\\AI\\asdfg.py",
               "RelativeDocumentMoniker": "backend\\AI\\AI\\asdfg.py",
@@ -503,7 +517,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": ".gitkeep",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\public\\.gitkeep",
               "RelativeDocumentMoniker": "frontend\\public\\.gitkeep",
@@ -515,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "log.css",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\styles\\log.css",
               "RelativeDocumentMoniker": "frontend\\src\\styles\\log.css",
@@ -527,7 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": ".gitkeep",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\.gitkeep",
               "RelativeDocumentMoniker": "frontend\\src\\.gitkeep",
@@ -539,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "index.html",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\public\\index.html",
               "RelativeDocumentMoniker": "frontend\\public\\index.html",
@@ -551,7 +565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "logo.svg",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\src\\logo.svg",
               "RelativeDocumentMoniker": "frontend\\src\\logo.svg",
@@ -563,7 +577,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "log.json",
               "DocumentMoniker": "C:\\team-ex_FIN\\backend\\AI\\AI\\logs\\log.json",
               "RelativeDocumentMoniker": "backend\\AI\\AI\\logs\\log.json",
@@ -575,7 +589,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "package.json",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\package.json",
               "RelativeDocumentMoniker": "frontend\\package.json",
@@ -587,7 +601,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "package-lock.json",
               "DocumentMoniker": "C:\\team-ex_FIN\\frontend\\package-lock.json",
               "RelativeDocumentMoniker": "frontend\\package-lock.json",
