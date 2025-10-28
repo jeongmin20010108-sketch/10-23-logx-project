@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+
 import './styles/MainPage.css';
 import './styles/Navbar.css';
 
 // [수정] 컴포넌트 함수로 전체 코드를 감쌉니다.
 function MainPage() {
-  const navigate = useNavigate();
+  
   const [file, setFile] = useState(null);
   const [fileContent, setFileContent] = useState('');
   const [loading, setLoading] = useState(false);
